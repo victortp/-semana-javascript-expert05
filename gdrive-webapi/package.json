@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "mkdir -p downloads && node src/index.js",
-    "test": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand",
-    "test:watch": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --watchAll --runInBand",
-    "test:cov": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --no-cache --runInBand --coverage"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch --runInBand",
+    "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest --no-cache --runInBand --coverage"
   },
   "keywords": [],
   "author": "",
